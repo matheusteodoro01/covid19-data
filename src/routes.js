@@ -1,14 +1,19 @@
 const express = require('express');
-const SPcasoContoller = require('./controllers/SPcasoController');
+const StateCaseController = require('./controllers/StateCaseController');
+const StateController = require('./controllers/StateController');
+
 
 
 const routes = express.Router();
 
-routes.post('/spcaso', SPcasoContoller.store)
+// criar nova rota de casos por estado
+routes.post('/spcaseupdate',StateCaseController.storeSP)
+
+routes.post('/statecase', StateCaseController.store)
+routes.get('/statecase', StateCaseController.index)
 
 
-routes.get('/', (req, res) => {
-    return res.json({ hello: 'World' })
-})
+routes.post('/state',StateController.store);
+
 
 module.exports = routes;
