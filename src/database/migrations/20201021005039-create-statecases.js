@@ -17,11 +17,18 @@ module.exports = {
         onUpdate: 'CASCADE',
         onDelete: 'CASCADE'
       },
+      uid: {
+        allowNull: false,
+        type: Sequelize.INTEGER,
+        allowNull: false,
+      },
       cases: {
+        allowNull: false,
         type: Sequelize.INTEGER,
         allowNull: false,
       },
       deaths: {
+        allowNull: false,
         type: Sequelize.INTEGER,
         allowNull: false,
       },
@@ -36,6 +43,7 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       datetime: {
+        allowNull: false,
         type: Sequelize.DATE
       },
       createdAt: {

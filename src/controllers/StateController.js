@@ -1,4 +1,4 @@
-const States = require("../models/states")
+const State = require("../models/states")
 
 module.exports = {
 
@@ -6,11 +6,17 @@ module.exports = {
 
         const { uf, state } = req.body;
 
-        States.create({ uf, state });
+        State.create({ uf, state });
 
-        
 
-    }
+    },
+
+    async index(req, res) {
+
+        const States = await State.findAll();
+
+        return res.json(States);
+    },
 
 
 

@@ -5,7 +5,7 @@ class States extends Model {
 
   static init(sequelize) {
     super.init({
-      id: DataTypes.INTEGER,
+    
       uf: DataTypes.STRING,
       state: DataTypes.STRING,
     }, {
