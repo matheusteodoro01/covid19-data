@@ -8,9 +8,10 @@ class Statecases extends Model {
      
       
       stateId: DataTypes.INTEGER,
+      uid: DataTypes.INTEGER,
       cases: DataTypes.INTEGER,
       deaths: DataTypes.INTEGER,
-      recoverd: DataTypes.INTEGER,
+      recovered: DataTypes.INTEGER,
       suspects: DataTypes.INTEGER,
       refuses: DataTypes.INTEGER,
       datetime: DataTypes.DATE

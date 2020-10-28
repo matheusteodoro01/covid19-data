@@ -11,7 +11,7 @@ const routes = express.Router();
 
 routes.post('/statecase', StateCaseController.store)
 routes.get('/statecase', StateCaseController.index)
-routes.put('/statecase', StateCaseController.index)
+routes.put('/statecase', StateCaseController.updateState)
 
 
 routes.get('/states', StateController.index)
