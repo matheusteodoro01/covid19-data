@@ -44,8 +44,6 @@ module.exports = {
                 return res.status(500).json({ message: 'State invalid' })
             })
 
-            console.log(data.data)
-
         const StateIdFind = await State.findOne({ where: { uf: uf } })
 
         if (StateIdFind == null) {
@@ -63,7 +61,7 @@ module.exports = {
         }
         
 
-        // preciso desestruturar o json da api para gravar junto com o id do estado no banco
+
          await StateCase.create({
             
              stateId: StateIdFind.id,
