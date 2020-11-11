@@ -14,7 +14,7 @@ routes.get('/statecase', StateCaseController.index)
 routes.put('/statecase', StateCaseController.updateState)
 
 
-routes.get('/states', StateController.index)
+routes.get('/state', StateController.index)
 routes.post('/state',StateController.store);
 
 
