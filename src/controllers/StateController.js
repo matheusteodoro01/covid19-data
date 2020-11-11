@@ -8,7 +8,7 @@ module.exports = {
 
         const { uf, state } = req.body;
         if (uf == undefined) {
-            return res.status(400).json({ message: 'uf invalid' })
+            return res.status(400).json({ message: 'uf invalided' })
         }
         else if (state == undefined) {
             return res.status(400).json({ message: 'state invalid' })
