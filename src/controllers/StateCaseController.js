@@ -59,19 +59,19 @@ module.exports = {
         if (StateCaseCount > 0) {
             return res.status(500).json({ message: 'Record already updated!' })
         }
-        
 
 
-         await StateCase.create({
-            
-             stateId: StateIdFind.id,
-             uid: data.data.uid,
-             cases: data.data.cases,
-             deaths: data.data.deaths,
-             suspects: data.data.suspects,
-             refuses: data.data.refuses,
-             recovered: 0,
-             datetime: data.data.datetime
+
+        await StateCase.create({
+
+            stateId: StateIdFind.id,
+            uid: data.data.uid,
+            cases: data.data.cases,
+            deaths: data.data.deaths,
+            suspects: data.data.suspects,
+            refuses: data.data.refuses,
+            recovered: 0,
+            datetime: data.data.datetime
         })
 
             .catch(respose => {
@@ -84,8 +84,17 @@ module.exports = {
 
     },
 
+    async indexDate(req, res) { 
+        const {dia,mes,ano} = req.params;
+        const query = `${ano}-${mes}-${dia}`
+        const DateFind = await StateCase.findAll({
+            where: {
+              datetime: {[Op.substring] : query }
+            },
+        })
+        return res.json(DateFind)
+    }
 
-    
 
 
 }

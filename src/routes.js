@@ -16,6 +16,6 @@ routes.put('/statecase', StateCaseController.updateState)
 
 routes.get('/state', StateController.index)
 routes.post('/state',StateController.store);
-
+routes.get('/statecase/:dia/:mes/:ano',StateCaseController.indexDate)
 
 module.exports = routes;
