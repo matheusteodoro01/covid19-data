@@ -9,45 +9,7 @@ Aplicação completa com Node.js no back-end, ReactJS no front-end.
 
 ## Features
 
-## Screenshots
-<table>
-	<tr>
-		<th width="100%">
-			Web Interface<br>
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<img width="1080" src="https://raw.githubusercontent.com/danielnegrisolibatista/be-the-hero/master/screenshots/web.gif">
-		</td>
-	</tr>
-</table>
 
-<table>
-	<tr>
-		<th width="33.3%">
-			App splash screen<br>
-		</th>
-		<th width="33.3%">
-			App incident list
-		</th>
-    <th width="33.3%">
-			App incident detail
-		</th>
-	</tr>
-	<tr><!-- Prevent zebra stripes --></tr>
-	<tr>
-		<td>
-			<img width="618" src="https://raw.githubusercontent.com/danielnegrisolibatista/be-the-hero/master/screenshots/splashScreen.jpg">
-		</td>
-		<td>
-			<img width="618" src="https://raw.githubusercontent.com/danielnegrisolibatista/be-the-hero/master/screenshots/incidentList.jpg">
-		</td>
-    <td>
-			<img width="618" src="https://raw.githubusercontent.com/danielnegrisolibatista/be-the-hero/master/screenshots/incidentDetail.jpg">
-		</td>
-	</tr>
-</table>
 
 ## Getting started
 Para executar o projeto, será necessário instalar/usar os seguintes programas
