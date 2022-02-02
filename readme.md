@@ -1,14 +1,11 @@
 ![Heroku Status](https://heroku-badge.herokuapp.com/?app=omnistack-be-the-hero)
 ![Netlify Status](https://api.netlify.com/api/v1/badges/55525325-f149-43f7-b2ac-a153aeffb538/deploy-status)
 
-# Be The Hero
+# Covid 19 Data
 Projeto desenvolvido com o objetivo de expor os dados do COVID 19 durante a pandemia de uma forma mais simples e facil de se entender
 
 Aplicação completa com Node.js no back-end, ReactJS no front-end.
 
-**Versão online**
-* [API Heroku](https://omnistack-be-the-hero.herokuapp.com)
-* [FrontEnd Netlify](https://confident-kare-1f5021.netlify.com/)
 
 ## Features
 
